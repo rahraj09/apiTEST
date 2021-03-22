@@ -1,0 +1,676 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 892500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SpecificcDateExchangeRate.setUp(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 19087800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FuturedateExchangeRate.setUp(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 319000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefLatestSuccessCode.setUp(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 213900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefIncorrectURL.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Verify if Current Date Exchange rate response is received while triggering request for any future date",
+        "description": "",
+        "id": "verify-different-features-of-exchange-rates-api-for-specific-mentioned-date;verify-if-current-date-exchange-rate-response-is-received-while-triggering-request-for-any-future-date",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 819408000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Currency-exchange rate API is up and running",
+            "match": {
+              "location": "FuturedateExchangeRate.currency_exchange_rate_API_is_up_and_running()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "Response of the request is :{\"rates\":{\"CAD\":1.4877,\"HKD\":9.2352,\"ISK\":151.4,\"PHP\":57.795,\"DKK\":7.4364,\"HUF\":367.94,\"CZK\":26.127,\"AUD\":1.5365,\"RON\":4.8853,\"SEK\":10.1743,\"IDR\":17128.99,\"INR\":86.2155,\"BRL\":6.571,\"RUB\":88.075,\"HRK\":7.5758,\"JPY\":129.54,\"THB\":36.672,\"CHF\":1.1066,\"SGD\":1.597,\"PLN\":4.62,\"BGN\":1.9558,\"TRY\":8.6354,\"CNY\":7.7413,\"NOK\":10.2018,\"NZD\":1.6598,\"ZAR\":17.5051,\"USD\":1.1891,\"MXN\":24.16,\"ILS\":3.9213,\"GBP\":0.85763,\"KRW\":1344.69,\"MYR\":4.8842},\"base\":\"EUR\",\"date\":\"2021-03-19\"}\u003cbr\u003e"
+            ],
+            "result": {
+              "duration": 1381706200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I hit the API URL for the mentioned future date exchange rate \"/2021-03-25\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/2021-03-25\"",
+                  "offset": 62
+                }
+              ],
+              "location": "FuturedateExchangeRate.i_hit_the_API_URL_for_the_mentioned_future_date_exchange_rate(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 36367000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "API returns the success response with status code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 53
+                }
+              ],
+              "location": "FuturedateExchangeRate.api_returns_the_success_response_with_status_code_as(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 697634700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The response with Current date is received",
+            "match": {
+              "location": "FuturedateExchangeRate.the_response_with_Current_date_is_received()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Verify different features of Exchange Rates API for specific mentioned Date",
+    "description": "",
+    "id": "verify-different-features-of-exchange-rates-api-for-specific-mentioned-date",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/FutureDateExchangeRate.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 472800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SpecificcDateExchangeRate.setUp(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 299700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FuturedateExchangeRate.setUp(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 224900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefLatestSuccessCode.setUp(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 218100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefIncorrectURL.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Verify if 400 BAD VALUE ERROR response is received for incorrect URL for Exchange rates request",
+        "description": "",
+        "id": "verify-different-features-of-exchange-rates-api;verify-if-400-bad-value-error-response-is-received-for-incorrect-url-for-exchange-rates-request",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 695900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Exchange rate API is up and running",
+            "match": {
+              "location": "StepDefIncorrectURL.exchange_rate_api_is_up_and_running()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "Response of the request is :{\"error\":\"time data \u0027351latest\u0027 does not match format \u0027%Y-%m-%d\u0027\"}\u003cbr\u003e"
+            ],
+            "result": {
+              "duration": 456176300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I hit the API URL with endpoint as \"/351latest\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/351latest\"",
+                  "offset": 35
+                }
+              ],
+              "location": "StepDefIncorrectURL.i_hit_the_api_url_with_endpoint_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2601900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "API Error Code 400 should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefIncorrectURL.api_error_code_should_be_displayed(Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Verify different features of Exchange Rates API",
+    "description": "",
+    "id": "verify-different-features-of-exchange-rates-api",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/IncorrectExchangeRateURL.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 938900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SpecificcDateExchangeRate.setUp(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 630300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FuturedateExchangeRate.setUp(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 640200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefLatestSuccessCode.setUp(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 522900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefIncorrectURL.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Verify the success Status is received while hitting for Exchange Rate request",
+        "description": "",
+        "id": "verify-different-features-of-exchange-rates-api;verify-the-success-status-is-received-while-hitting-for-exchange-rate-request",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1699300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Currency Exchange rate API is up and running",
+            "match": {
+              "location": "StepDefLatestSuccessCode.Currency_exchange_rate_API_is_up_and_running()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "Response of the request is :{\"rates\":{\"CAD\":1.4877,\"HKD\":9.2352,\"ISK\":151.4,\"PHP\":57.795,\"DKK\":7.4364,\"HUF\":367.94,\"CZK\":26.127,\"AUD\":1.5365,\"RON\":4.8853,\"SEK\":10.1743,\"IDR\":17128.99,\"INR\":86.2155,\"BRL\":6.571,\"RUB\":88.075,\"HRK\":7.5758,\"JPY\":129.54,\"THB\":36.672,\"CHF\":1.1066,\"SGD\":1.597,\"PLN\":4.62,\"BGN\":1.9558,\"TRY\":8.6354,\"CNY\":7.7413,\"NOK\":10.2018,\"NZD\":1.6598,\"ZAR\":17.5051,\"USD\":1.1891,\"MXN\":24.16,\"ILS\":3.9213,\"GBP\":0.85763,\"KRW\":1344.69,\"MYR\":4.8842},\"base\":\"EUR\",\"date\":\"2021-03-19\"}\u003cbr\u003e"
+            ],
+            "result": {
+              "duration": 198474600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I hit the API URL for the latest currency exchange rates with endpoint as \"/latest\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/latest\"",
+                  "offset": 74
+                }
+              ],
+              "location": "StepDefLatestSuccessCode.i_hit_the_API_URL_for_the_latest_currency_exchange_rates_with_endpoint_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3649400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "API returns the response with status code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 45
+                }
+              ],
+              "location": "StepDefLatestSuccessCode.api_returns_the_response_with_status_code_as(Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 909300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SpecificcDateExchangeRate.setUp(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 571200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FuturedateExchangeRate.setUp(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 475300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefLatestSuccessCode.setUp(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 525900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefIncorrectURL.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Verify the Response is generated for Latest Exchange rates request",
+        "description": "",
+        "id": "verify-different-features-of-exchange-rates-api;verify-the-response-is-generated-for-latest-exchange-rates-request",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 633300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Currency Exchange rate API is up and running",
+            "match": {
+              "location": "StepDefLatestSuccessCode.Currency_exchange_rate_API_is_up_and_running()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "Response of the request is :{\"rates\":{\"CAD\":1.4877,\"HKD\":9.2352,\"ISK\":151.4,\"PHP\":57.795,\"DKK\":7.4364,\"HUF\":367.94,\"CZK\":26.127,\"AUD\":1.5365,\"RON\":4.8853,\"SEK\":10.1743,\"IDR\":17128.99,\"INR\":86.2155,\"BRL\":6.571,\"RUB\":88.075,\"HRK\":7.5758,\"JPY\":129.54,\"THB\":36.672,\"CHF\":1.1066,\"SGD\":1.597,\"PLN\":4.62,\"BGN\":1.9558,\"TRY\":8.6354,\"CNY\":7.7413,\"NOK\":10.2018,\"NZD\":1.6598,\"ZAR\":17.5051,\"USD\":1.1891,\"MXN\":24.16,\"ILS\":3.9213,\"GBP\":0.85763,\"KRW\":1344.69,\"MYR\":4.8842},\"base\":\"EUR\",\"date\":\"2021-03-19\"}\u003cbr\u003e"
+            ],
+            "result": {
+              "duration": 180006100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I hit the API URL for the latest currency exchange rates with endpoint as \"/latest\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/latest\"",
+                  "offset": 74
+                }
+              ],
+              "location": "StepDefLatestSuccessCode.i_hit_the_API_URL_for_the_latest_currency_exchange_rates_with_endpoint_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1219400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "API returns the response with status code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 45
+                }
+              ],
+              "location": "StepDefLatestSuccessCode.api_returns_the_response_with_status_code_as(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 29141900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Response is getting pulled with all the exchange rate data for different currencies",
+            "match": {
+              "location": "StepDefLatestSuccessCode.response_is_getting_pulled_with_all_the_exchange_rate_data_for_different_currencies()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Verify different features of Exchange Rates API",
+    "description": "",
+    "id": "verify-different-features-of-exchange-rates-api",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/LatestExchangeRate.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 214800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SpecificcDateExchangeRate.setUp(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 143200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FuturedateExchangeRate.setUp(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 140500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefLatestSuccessCode.setUp(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 102700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefIncorrectURL.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Verify if Success Status Code is generated while triggering GET Request for specific date",
+        "description": "",
+        "id": "verify-different-features-of-exchange-rates-api-for-specific-mentioned-date;verify-if-success-status-code-is-generated-while-triggering-get-request-for-specific-date",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 217900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Currency-Exchange rate API is up and running",
+            "match": {
+              "location": "SpecificcDateExchangeRate.currency_Exchange_rate_API_is_up_and_running()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "Response of the request is :{\"rates\":{\"CAD\":1.4852,\"HKD\":9.2476,\"ISK\":151.4,\"PHP\":57.982,\"DKK\":7.436,\"HUF\":367.74,\"CZK\":26.159,\"AUD\":1.5427,\"RON\":4.8874,\"SEK\":10.1355,\"IDR\":17216.3,\"INR\":86.429,\"BRL\":6.7299,\"RUB\":87.8245,\"HRK\":7.5765,\"JPY\":130.02,\"THB\":36.656,\"CHF\":1.1047,\"SGD\":1.6036,\"PLN\":4.6136,\"BGN\":1.9558,\"TRY\":8.9498,\"CNY\":7.7435,\"NOK\":10.1213,\"NZD\":1.6618,\"ZAR\":17.718,\"USD\":1.1907,\"MXN\":24.6882,\"ILS\":3.9155,\"GBP\":0.85668,\"KRW\":1346.65,\"MYR\":4.9075},\"base\":\"EUR\",\"date\":\"2021-03-17\"}\u003cbr\u003e"
+            ],
+            "result": {
+              "duration": 181340200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I hit the API URL for the specific date exchange rate with endpoint as \"/2021-03-17\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/2021-03-17\"",
+                  "offset": 71
+                }
+              ],
+              "location": "SpecificcDateExchangeRate.i_hit_the_API_URL_for_the_specific_date_exchange_rate_with_endpoint_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 601000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "API return the response with status code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 44
+                }
+              ],
+              "location": "SpecificcDateExchangeRate.api_return_the_response_with_status_code_as(Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 433400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SpecificcDateExchangeRate.setUp(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 259900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FuturedateExchangeRate.setUp(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 239800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefLatestSuccessCode.setUp(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 149600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefIncorrectURL.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Verify the Response is received while hitting Exchange rate Request with specific Date",
+        "description": "",
+        "id": "verify-different-features-of-exchange-rates-api-for-specific-mentioned-date;verify-the-response-is-received-while-hitting-exchange-rate-request-with-specific-date",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 264300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Currency-Exchange rate API is up and running",
+            "match": {
+              "location": "SpecificcDateExchangeRate.currency_Exchange_rate_API_is_up_and_running()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "Response of the request is :{\"rates\":{\"CAD\":1.4852,\"HKD\":9.2476,\"ISK\":151.4,\"PHP\":57.982,\"DKK\":7.436,\"HUF\":367.74,\"CZK\":26.159,\"AUD\":1.5427,\"RON\":4.8874,\"SEK\":10.1355,\"IDR\":17216.3,\"INR\":86.429,\"BRL\":6.7299,\"RUB\":87.8245,\"HRK\":7.5765,\"JPY\":130.02,\"THB\":36.656,\"CHF\":1.1047,\"SGD\":1.6036,\"PLN\":4.6136,\"BGN\":1.9558,\"TRY\":8.9498,\"CNY\":7.7435,\"NOK\":10.1213,\"NZD\":1.6618,\"ZAR\":17.718,\"USD\":1.1907,\"MXN\":24.6882,\"ILS\":3.9155,\"GBP\":0.85668,\"KRW\":1346.65,\"MYR\":4.9075},\"base\":\"EUR\",\"date\":\"2021-03-17\"}\u003cbr\u003e"
+            ],
+            "result": {
+              "duration": 167073900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I hit the API URL for the specific date exchange rate with endpoint as \"/2021-03-17\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/2021-03-17\"",
+                  "offset": 71
+                }
+              ],
+              "location": "SpecificcDateExchangeRate.i_hit_the_API_URL_for_the_specific_date_exchange_rate_with_endpoint_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 572900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "API return the response with status code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 44
+                }
+              ],
+              "location": "SpecificcDateExchangeRate.api_return_the_response_with_status_code_as(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 27849100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Response is getting pulled for the specific date",
+            "match": {
+              "location": "SpecificcDateExchangeRate.response_is_getting_pulled_for_the_specific_date()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Verify different features of Exchange Rates API for specific mentioned Date",
+    "description": "",
+    "id": "verify-different-features-of-exchange-rates-api-for-specific-mentioned-date",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/SpecificDateExchangeRate.feature",
+    "tags": []
+  }
+]
